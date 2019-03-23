@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px auto;
+    width: 960px;
+    height: 800px;
+    background-color: #ffffff;
+}
+
+header {
+    width: 650px;
+    margin-left: 140px;
+    background-color: #ffffff;
+    margin-bottom: 0px auto;
+}
+
+h1 {
+    float: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color:#4aaaa5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 26px;
+    margin-bottom: 0px;
+}
+
+#menu {
+    text-align: right;
+    float: right;
+    padding-top: 35px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #777777;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li {
+    display: inline;
+
+}
+
+#index {
+    border-right: 1px solid lightgrey;
+}
+
+#contact {
+    border-right: 1px solid lightgrey;
+}
+
+.container {
+    background: url("../images/mooning_@2X.png");
+    border-top: 2px solid darkgray;
+    clear: both;
+    overflow: auto;
+    padding-bottom: 100px;
+    width: 100%;
+    max-width: 960px;
+}
+
+.box {
+    background-color: white;
+    width: 650px;
+    height: 650px;
+    padding-left: 25px;
+    margin-left: 140px;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #666666;
+    height: 50px;
+    margin: 0px auto;
+    border-top: 6px solid #4aaaa5;
+}
+
+#copyright {
+    color: lightgray;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 10px;
+    margin: 0px auto;
+}
+
+#portfolioheader {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    border-bottom: 2px solid lightgray;
+    padding: 25px 0px 10px;
+    font-size: 18px;
+    margin: 20px 25px 5px 0px;
+}
+
+.project {
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0px 25px;
+}
+
+.project:nth-child(even) {
+    margin-right: 40px;
+    float: right;
+}
+
+.project img {
+    float: left;
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-right: 25px;
+    border: 0 none;
+    opacity: .8;
+}
+
+.project p {
+    border-bottom: 0;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .box {
+        max-width: 450px;
+    }
+    header {
+        max-width: 700px;
+    }
+
+    .project {
+        width: 42%;
+        margin-top: -3px; 
+    }
+
+    .project p {
+        padding: 4px;
+        font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+      .container { 
+        width: 100%;
+        height: 100%
+    }
+
+      .box {
+          max-width: 500px;
+          margin: 0px auto;
+          height: 460px;
+      }
+
+      header {
+          width: 53%;
+          margin-left: 230px;
+      }
+
+      h1 {
+          font-size: 20px;
+      }
+
+      #menu {
+          margin-right: 10px;
+      }
+
+      footer {
+        width: 100%;
+        margin: 0px;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+        body {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .container { 
+            width: 100%;
+            height: 100%
+        }
+
+        .box {
+            max-width: 300px;
+            margin: 0px auto;
+            height: 800px;
+            padding: 0px 10px 0px 30px;
+        }
+
+        .project {
+            width: 90%;
+            float: none;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        .project:nth-child(even) {
+            margin-right: 25px;
+        }
+
+        header {
+            width: 79%;
+            margin-left: 40px;
+            position: static;
+        }
+  
+        h1 {
+            font-size: 24px;
+            float: none;
+            text-align: center;
+        }
+  
+        #menu {
+            margin-top: 0px;
+            padding: 10px 0px;
+            float: none;
+            text-align: center;
+        }
+  
+        footer {
+          width: 100%;
+          margin: 0px;
+      }
+  }

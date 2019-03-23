@@ -1,0 +1,212 @@
+body {
+    margin: 0px auto;
+    width: 960px;
+    height: 800px;
+    background-color: #ffffff;
+}
+
+header {
+    width: 650px;
+    margin-left: 140px;
+    background-color: #ffffff;
+    margin-bottom: 0px auto;
+}
+
+h1 {
+    float: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color:#4aaaa5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 26px;
+    margin-bottom: 0px;
+}
+
+#menu {
+    text-align: right;
+    float: right;
+    padding-top: 35px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #777777;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li {
+    display: inline;
+
+}
+
+#index {
+    border-right: 1px solid lightgrey;
+}
+
+#contact {
+    border-right: 1px solid lightgrey;
+}
+
+.container {
+    background: url("../images/mooning_@2X.png");
+    border-top: 2px solid darkgray;
+    clear: both;
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.box {
+    background-color: white;
+    width: 650px;
+    height: 525px;
+    padding-left: 25px;
+    margin-left: 140px;
+}
+
+footer {
+    background-color: #666666;
+    height: 50px;
+    margin: 0px auto;
+    border-top: 6px solid #4aaaa5;
+}
+
+#copyright {
+    color: lightgray;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 10px;
+    margin: 0px auto;
+}
+
+#contactheader {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    border-bottom: 2px solid lightgray;
+    padding: 25px 0px 10px; 
+    font-size: 18px;
+    margin: 20px 25px 5px 0px;
+}
+
+form {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+input[type=text], select, textarea {
+    width: 96%;
+    padding: 6px;  
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 200px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 6px 14px;
+}
+
+@media screen and (max-width: 980px) {
+    .box {
+        max-width: 400px;
+    }
+    header {
+        max-width: 700px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .container { 
+       width: 100%;
+       height: 100%;
+  }
+
+    .box {
+        max-width: 400px;
+        margin: 0px auto;
+    }
+
+    header {
+        max-width: 450px;
+        margin-left: 170px;
+        margin-bottom: -2px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    #menu {
+        margin-right: 20px;
+        padding-top: 25px;
+    }
+
+    footer {
+      width: 100%;
+      margin: 0px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .container { 
+        width: 100%;
+        height: 100%
+    }
+
+    .box {
+        max-width: 300px;
+        margin: 0px auto;
+        height: auto;
+        padding: 0px 20px 20px;
+    }
+
+    header {
+        width: 85%;
+        margin-left: 30px;
+        position: static;
+    }
+
+    h1 {
+        font-size: 24px;
+        float: none;
+        text-align: center;
+    }
+
+    #menu {
+        margin-top: 0px;
+        padding: 10px 0px;
+        float: none;
+        text-align: center;
+    }
+
+    footer {
+      width: 100%;
+      margin: 0px;
+  }
+}
