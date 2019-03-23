@@ -110,8 +110,7 @@ footer {
 
 .project:nth-child(even) {
     margin-right: 40px;
-    float: right;
-}
+} 
 
 .project img {
     float: left;
