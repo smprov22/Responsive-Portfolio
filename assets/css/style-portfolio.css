@@ -120,18 +120,21 @@ footer {
     margin-right: 25px;
     border: 0 none;
     opacity: .8;
+    z-index: 0;
 }
 
-.project p {
-    border-bottom: 0;
+.project a {
     background-color: #4aaaa5;
     color: #fff;
     text-align: center;
+    float: left;
+    z-index: 1;
+    text-decoration: none;
     position: absolute;
-    bottom: 20px;
-    padding: 8px;
     width: 100%;
-    margin-bottom: 0;
+    padding: 8px;
+    bottom: 20px;
+    right: 0px;
 }
 
 @media screen and (max-width: 980px) {
@@ -147,7 +150,7 @@ footer {
         margin-top: -3px; 
     }
 
-    .project p {
+    .project a {
         padding: 4px;
         font-size: 16px;
     }
